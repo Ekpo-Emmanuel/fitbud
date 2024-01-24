@@ -24,7 +24,7 @@ type Mutation {
         { name: "access-control-request-headers", value: "*" }
         {
           name: "apikey"
-          value: "8HRrSjxvsScn3TgmTkmoGxIwvbczFvVTF0YIq3DlM1Q1KPEI5y4DhI3SzBkVYV9Z"
+          value: "${process.env.REACT_APP_MONGO_API_KEY}"
         }
       ]
       # postbody: """

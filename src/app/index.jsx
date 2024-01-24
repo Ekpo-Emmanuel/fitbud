@@ -16,6 +16,9 @@ import { useAuth } from '../providers/AuthContext';
 import { useState } from 'react';
 import { useDebounce } from '@uidotdev/usehooks';
 
+import 'dotenv/config';
+
+
 const exercisesQuery = gql`
   query exercises($muscle: String, $name: String, $offset: Int) {
     exercises(muscle: $muscle, name: $name, offset: $offset) {
